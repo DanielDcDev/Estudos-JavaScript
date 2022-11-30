@@ -1,3 +1,4 @@
+function CalcularIMC(peso, altura, cb){
 
     if( peso === undefined || altura=== undefined ){
         throw Error("need two parameters: weight  and height")
