@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
 
-    <link rel="stylesheet" href="/Css/styleWelcome.css">
+<html lang="pt-br">
+
+<head>
+    <title> pagina de exemplo de DOM </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <link rel="stylesheet" href="/Css/estilo.css">
 </head>
 
 <body>
@@ -13,13 +17,19 @@
     <div id="principal">
         <header class="hero">
 
-            <div class="top-bar">
-                <p id="Welcome">Bem-vindo(a), </p>
-            </div>
+
 
             <div class="hero-content">
                 <h1>Curso Javascript Completo</h1>
-                <p>Aprenda Javascript de verdade</p>
+                <h2>Cadastre-se em nossa newsletter</h2>
+                <div id="newsletterForm">
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" autocomplete="off">
+                    <button type="button" id="btn" onclick="RegisterEmail()">Enviar</button>
+                </div>
+                <div id="newsletterFeedback">
+
+                </div>
             </div>
         </header>
 
@@ -27,17 +37,17 @@
 
             <section class="content-section">
                 <div class="card card-1">
-                    <img src="/html/images.welcome/card_01.png" alt="">
+                    <img src="/Imagens/card_01.png" alt="">
                     <p>Seletores</p>
                 </div>
 
                 <div class="card card-2">
-                    <img src="/html/images.welcome/card_02.jpg" alt="">
+                    <img src="/Imagens/card_02.jpg" alt="">
                     <p>Posicionamento</p>
                 </div>
 
                 <div class="card card-3">
-                    <img src="/html/images.welcome/card_03.jpg" alt="">
+                    <img src="/Imagens/card_03.jpg" alt="">
                     <p>Fontes</p>
                 </div>
             </section>
@@ -60,7 +70,8 @@
 
         </footer>
     </div>
-<script src="/Exercicios/saudacao.js"></script>
+
+    <script src="/Js/index.js"></script>
 </body>
 
 </html>

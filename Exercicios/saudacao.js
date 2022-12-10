@@ -1,13 +1,15 @@
 (function () {
-    const nomeusuario = "Daniel";
-   // document.querySelector(".Welcome").innerHTML ="Bem vindo (Sr.), " + nomeusuario;
-    const elemento = document.querySelector(".top-bar p")
-    //troca todo o texto
-//    elemento.textContent = "Bem vindo (Sr), " + nomeusuario
-    //apenas adiciona a variavel
-//    elemento.textContent= elemento.textContent + nomeusuario
-    //mesma coisa porém resumido
-//    elemento.textContent += nomeusuario    
-    //mesma coisa porém com a possibilidade de modificar via html
+    const nomeusuario =null;
+    const elemento = document.querySelector(".top-bar p");
+   if(nomeusuario){
+    
+    console.log(elemento.textContent);
     elemento.innerHTML += "<b>" + nomeusuario + "<b>";
+   }else{
+    //elemento.parentElement.style.display = "none"; 
+    //elemento.remove(); não é suportado no internet Explorer
+    const elementToRemove = elemento.parentElement;
+    elementToRemove.parentElement.removeChild(elementToRemove);
+   }
+   console.log(elemento);
 })()
