@@ -25,6 +25,7 @@ btn3.addEventListener("click", function(parametro){
 }, false)
 document.addEventListener("click", function(){
     console.log("clicou no documento");
+    console.log(e.target);
 }, false)
 
 const container = document.getElementById("container")
@@ -44,9 +45,12 @@ const btns = document.querySelectorAll(".container2 button");
 */
 
 container2.addEventListener("click", function(e){
-    e.stopPropagation();
-    
-    if(e.target.nodeName === "BUTTON"){
+    //e.stopPropagation();
+    console.log(e.target);
+    console.log();
+    console.log();
+    console.log();
+    /*if(e.target.nodeName === "BUTTON"){
         console.log(e.target);
-    }
+    }*/
 })
