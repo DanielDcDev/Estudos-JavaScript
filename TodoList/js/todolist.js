@@ -59,7 +59,7 @@ const ul = document.getElementById('todo-list');
                 li.appendChild(deleteButton)
 
                 
-                addEventLi(li);
+                
 
                 return li;
             }
@@ -77,11 +77,6 @@ const ul = document.getElementById('todo-list');
                 itemInput.value = "";
                 itemInput.focus();
             }
-            function addEventLi(li){
-                li.addEventListener("click", function(){
-                console.log(this);
-            })
-            }
             function addTask(task){
                 arrTasks.push({
                 name: task,
@@ -89,7 +84,9 @@ const ul = document.getElementById('todo-list');
                 completed: false
                 })
             }
+            function clicedUl()
     
+                ul.addEventListener("click", clicedUl);
 
 renderTasks();
 })()

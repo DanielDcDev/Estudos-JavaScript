@@ -1,0 +1,14 @@
+
+O que veremos
+
+ tipo de dados que armazena coleção de dados
+(chave\valor).
+Uma array armazena dados ordenados, enquanto objetos armazenam dados não ordenados.
+
+O que veremos?
+Sintaxe literal vs sintaxe formal
+Dados primitivos vs objetos
+objetos nativos e o operador new
+Funções construtoras de objetos
+propriedades e métodos
+Entender o this
