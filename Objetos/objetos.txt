@@ -12,3 +12,6 @@ objetos nativos e o operador new
 Funções construtoras de objetos
 propriedades e métodos
 Entender o this
+
+== o objeto date recebe varios outros metodos, e semelhante as bibliotecas de python que tem varios metodos dentro de
+unico metodos

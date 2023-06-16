@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const task1 = {
+            name:'task 1',
+            createdAt: new Date(),
+            updatedAt:null,
+            completed: false
+
+        }
+        const task2 = {
+            name:'task 2',
+            createdAt: new Date(),
+            updatedAt:null,
+            completed: false,
+            changeName: function(name){
+                console.log(this)
+            }
+
+        }
+
+task1.name = 'task 1 updated'
+task1.updatedAt = new Date()
+
+task2.changeName('New name')
+
+console.log(task1)
+console.log(task2)
+    </script>
+</body>
+</html>
